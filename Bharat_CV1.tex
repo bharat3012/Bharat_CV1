@@ -1,0 +1,220 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,calibri]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[left=0.75in,right=0.75in,top=0.60in,bottom=0.60in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{import}
+\usepackage{enumitem}
+\usepackage{url}
+% \hypersetup{linkcolor=blue}
+% \renewcommand{\baselinestretch}{0.5}
+
+% personal data
+\name{Bharat}{Giddwani}
+ %\title{CS}                               % optional, remove / comment the line if not wanted
+\address{Room 245, Hostel H}{NIT Raipur}{Chhattisgarh, India}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91 8441029980}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{bharatgiddwani@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{https://www.linkedin.com/in/bharat-giddwani-b30640140/}                        % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[62pt][0.2pt]{picture}                       % optional, remove / comment the line if not wanted; '62pt' is the height the picture must be resized to, 0.2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-20pt}
+\small{Pre-final year undergraduate at NIT Raipur pursuing a major in Electronics and Telecommunication Engineering with honors, applying for Research and Development opportunities in Deep Learning, Computer Vision, Deep Reinforcement Learning, Natural Language Processing, Machine Learning and Data Science.}
+% \vspace{12pt}
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+% {\textbf{Homepage:} \url{www.cse.iitb.ac.in/\textasciitilde utkarshk}}
+
+\section{Education}
+
+\begin{itemize}[leftmargin=0.0in]
+\setlength\itemsep{.2em}
+\cventry{2016-2020}{}{Bachelor of Technology with Honors}{\textmd{9.38/10.0}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\vspace{-10pt}
+\item[] Electronics and Telecommunication Engineering, NIT Raipur
+}
+\vspace{-3pt}
+\cventry{2015}{}{Intermediate/+2}{\textmd{91.00\%}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\vspace{-10pt}
+\item[] Kailash Vidya Vihar,(J.K.), Nimbahera, Rajasthan(CBSE)
+}
+\vspace{-3pt}
+\cventry{2013}{}{Matriculation}{\textmd{7.8/10.0}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\vspace{-10pt}
+\item[] Kailash Vidya Vihar,(J.K.),Nimbahera, Rajasthan(CBSE)
+}
+\end{itemize}
+
+\vspace{-10pt}
+\section{Research Projects}
+
+\begin{itemize}[leftmargin=0.0in]
+\setlength\itemsep{.2em}
+\vspace{-1pt}
+\cventry{Ongoing}{Guide: Prof Guide-Dr.R.N.Patel, EE Dept, NIT Raipur}{Undergraduate Project: Finger-reader: Vision to Speech}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\item Developing a device based on embedded systems, machine learning and computer vision techniques.
+\vspace{-1pt}
+\item Will be capable of detecting general objects such as books with its depth from the device.
+\vspace{-1pt}
+\item Employing \textbf{OCR, NLP and Computer vision} programming which is used to read the printed text.
+\vspace{-1pt}
+\item  Finger will be acting as a cursor for reading books sequentially by converting images of text to speech.
+}
+
+\cventry{Ongoing}{Guide: Prof Guide-Dr.R.K.Chaurasiya, ETC Dept, NIT Raipur}{Undergraduate Project: A Data Driven: Fatigue Crack Detecting System}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\item A machine learning approach to detect fatigue cracks in metals such as Aluminum, Iron.
+\vspace{-1pt}
+\item Analyzed various time and frequency domain features on accelerometer and piezoelectric sensors readings
+\vspace{-1pt}
+\item Employing a \textbf{DSP system} with \textbf{SVM classifier}, on which data will be channelled for crack detection.
+}
+
+\cventry{May-July 2018}{Guide: Prof Guide-Dr.Rama Krishna Sai Gorthi, EE Dept, IIT Tirupati}{Internship Project: Rotation Invariant Object Detection}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+\item A novel machine learning and deep learning based approach to accurately detect objects in rotated images.
+\vspace{-1pt}
+\item Applied \textbf{PCA} to find the direction of spread of image pixels rotate it in accoradance to the reference axis. 
+\vspace{-1pt}
+\item Then pass the images to \textbf{pre-trained YOLOv3  model} (Improved YOLO model) in 'Pytorch' library.
+}
+\end{itemize}
+
+
+\section{Work Experience}
+
+\begin{itemize}[leftmargin=0.0in]
+\setlength\itemsep{.2em}
+
+
+
+\cventry{Winter 2018-19}{Guide: Prof Dr.Bharath H Aithal, RCG school of IDM , IIT Kharagpur}{Research Intern at Indian Institute of Technology, Kharagapur}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+\item Building Extraction using Semantic Segmentation on Indian City images.
+\vspace{-2pt}
+\item Experimentation with various Deep learning networks (U-Net, SegNet) for segmentation on satellite images by INRIA Arieal images in Tensorflow.
+}
+
+\cventry{Summer 2018}{Guide: Prof Dr.Rama Krishna Sai Gorthi, EE Dept, IIT Tirupati}{Research Intern at Indian Institute of Technology, Tirupati}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+\item Study and Implementation Object Detection in Natural Images using Deep Learning.
+\vspace{-2pt}
+\item Experimentation with various Deep learning frameworks (Tensorflow , PyTorch) and object detection models.
+}
+
+\cventry{Fall 2017-18}{BSNL, ALTTC Ghaziabad (Uttar Pradesh)}{Industrial Training:Wireless Communication and Network Technologies}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+\item Visited various Telecommunications labs. Briefly studied about different Telecommunication topologies, and different generations of mobile communication.
+\vspace{-1pt}
+\itemriefly Along with Next generation Network, Broadband, Wifi, Wi-Max, LAN, WAN, OFC etc., and Basics of IP Addressing (IPv4 and IPv6).
+}
+
+\pagebreak
+
+
+\section{Technical Strengths}
+
+\begin{itemize}[leftmargin=.2in]
+\setlength\itemsep{.2em}
+\item \textbf{Programming Skills:} C, C++, MATLAB, Python, \LaTeX
+\vspace{-1pt}
+\item \textbf{Embedded Programming:} 8051,Arduino, MSP430,Raspberry-pi.
+\vspace{-1pt}
+\item \textbf{Simulation Tools:} LabView,and MATLAB-Simulink.
+\vspace{-1pt}
+\item \textbf{Operating Systems:} Windows, and Linux
+\vspace{-1pt}
+\item \textbf{Deep Learning Frameworks:} PyTorch, Keras, Tensorflow
+\end{itemize}
+
+\section{Positions of Responsibility}
+
+\begin{itemize}[leftmargin=.2in]
+\setlength\itemsep{.2em}
+
+\item \textbf{IEEE Student Branch Member, NIT Raipur:} Had a volunteering and leadership experience at college level as executive member during first year and now as a core member.
+\vspace{-1pt}
+\item \textbf{Sahyog: THe Mentorship club} (\textit{Teaching Cell, NIT Raipur}): Working as a core mentor for first and second year students. Sahyog provides every possible help and direction to the students of our college for building their career.
+\vspace{-1pt}
+\item \textbf{PRMC: Branch Student Representative}: PRMC- Public and Media Relations cell:  Collecting, reporting and spreading the various news organized in and by our department in specified format.
+
+\end{itemize}
+
+\section{Certificates} 
+\begin{tabular}{rl} 
+\textsc{Oct.} 2018: \vspace{-1pt} & Deep Learning A to Z(Udemy Course Certificate).\\
+\textsc{Oct.} 2018: \vspace{-1pt} & Certificate of Completion of Drishti online exam.\\
+\textsc{Sep.} 2018: \vspace{-1pt} & Certificate of Participation in IICDC 2018 Challenge.\\
+\textsc{May.} 2018: \vspace{-1pt} & Deep Learning Specialization (Coursera Course Certificate) - deeplearning.ai\\
+\textsc{Feb.} 2018: \vspace{-1pt} & Machine Learning (Coursera Course Certificate) - Stanford University\\
+\textsc{Dec.} 2018: \vspace{-1pt}& Machine Learning (Short Term Training Program Participation Certificate) - NIT Raipur\\
+\textsc{Oct.} 2017: \vspace{-1pt}& Introduction to Python for Data Science - DataCamp certificate\\
+\end{tabular} 
+
+\section{Soft Skills}
+\begin{tabular}{r|p{11cm}}
+\textsc{Languages}: \vspace & English - Professional Fluency\\ \vspace & Hindi - Fluent \\ \vspace& Sindhi - Mother Tongue\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\section{Interests and Activities}
+\begin{tabular}{rl} 
+Interests: \vspace &  Machine Learning, Deep Learning, Image Processing, Computer Vision, NLP, Mathematics\\
+Activities: \vspace & Reading, Animation, Chess, Badminton, Travelling.
+\end{tabular}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
